@@ -1,6 +1,5 @@
 // gulp modules
 const gulp                    = require('gulp')
-const gulpStylus              = require('gulp-stylus')
 const gulpMinifyHTML          = require('gulp-minify-html')
 
 // webpack modules

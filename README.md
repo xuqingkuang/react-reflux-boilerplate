@@ -8,15 +8,15 @@ Another template that makes react and reflux web app developmet easier.
 
 ## Features
 
-* React 0.13
-* React Router 0.13
-* Reflux 0.12 ( Refactor of Flux )
+* React 0.14
+* React Router 1.0.0
+* Reflux 0.3.0 ( Refactor of Flux )
 * Node 4.1 Compatible
-* Babel 5.8 for ES6 support
+* Babel 5.8 for ES7 support
 * Browser Live Reload based on react-transform-hmr, it build codes pretty fast!
 * CSS / HTML / JS minification / Image optimization when built
 * JS code duplication removal during built
-* Code is minimized and pure write with Coffee and cjsx for better extension, focused on core features only.
+* Code is minimized and pure write with Javascript ES7, focused on core features only.
 
 If you are interested, please read the `package.json` file for all installed modules.
 

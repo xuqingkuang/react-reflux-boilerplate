@@ -1,6 +1,6 @@
 {
   "name": "react-reflux-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Reflux Boilerplate",
   "homepage": "https://github.com/xuqingkuang/react-reflux-boilerplate",
   "author": {
@@ -22,9 +22,10 @@
     "url": "https://github.com/xuqingkuang/react-reflux-boilerplate"
   },
   "dependencies": {
-    "react": "^0.13.3",
-    "react-router": "^0.13.3",
-    "reflux": "^0.2.12"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.0-rc3",
+    "reflux": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.25",
