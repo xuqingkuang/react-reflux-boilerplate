@@ -1,30 +1,22 @@
 import React, { Component } from 'react';
+import Reflux from 'reflux'
+import TitleStore from '../stores/titles';
+import TitleActions from '../actions/titles';
 
-const titles = [
-  'React Reflux Boilerplate',
-  'React',
-  'Reflux',
-  'Boilerplate'
-];
+// FIXME: Component is broken when using mixins
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {title: titles[0]};
-    this.interval = setInterval((() => this.tick()), 1000);
-  }
-  
-  tick() {
-    let next = titles.indexOf(this.state.title) + 1;
-    if (next === titles.length) {
-      next = 0;
-    };
-    this.setState({title: titles[next]});
-  }
+export default React.createClass({
+  mixins: [
+    Reflux.connect(TitleStore)
+  ],
+
+  componentDidMount() {
+    this.interval = setInterval(() => {TitleActions.nextTitle(this.state.title)}, 1000);
+  },
 
   componentWillUnmount() {
     clearInterval(this.interval);
-  }
+  },
 
   render() {
     return (
@@ -48,4 +40,4 @@ export default class Home extends Component {
       </section>
     )
   }
-}
+})
