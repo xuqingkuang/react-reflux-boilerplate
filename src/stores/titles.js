@@ -1,7 +1,7 @@
 import Reflux from 'reflux';
 import TitleActions from '../actions/titles';
 
-titles = [
+const titles = [
   'React Reflux Boilerplate',
   'React',
   'Reflux',
@@ -18,7 +18,7 @@ export default Reflux.createStore({
   },
 
   getNextTitle(currentTitle) {
-    next = titles.indexOf(currentTitle);
+    let next = titles.indexOf(currentTitle);
     next += 1;
     if (next === titles.length) {
       next = 0;

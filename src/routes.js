@@ -2,16 +2,15 @@ import React from 'react';
 import {Router, Route, IndexRoute} from 'react-router';
 
 import Layout from './components/layout';
-import NotFound from './pages/not-found';
-
-import Home from './pages/home'
+import NotFoundPage from './pages/not-found';
+import HomePage from './pages/home'
 
 const routes = (
   <Router>
     <Route path="/" component={Layout}>
-      <IndexRoute component={Home} />
+      <IndexRoute component={HomePage} />
     </Route>
-    <Route path="*" component={NotFound} />
+    <Route path="*" component={NotFoundPage} />
   </Router>
 );
 

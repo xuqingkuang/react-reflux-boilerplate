@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Reflux from 'reflux'
 import TitleStore from '../stores/titles';
 import TitleActions from '../actions/titles';
-
-// FIXME: Component is broken when using mixins
 
 export default React.createClass({
   mixins: [
