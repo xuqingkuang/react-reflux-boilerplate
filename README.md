@@ -1,3 +1,9 @@
+> The project was stopped maintaince, please move your focus to brand new React Redux Boilerplate:
+>
+> https://github.com/xuqingkuang/react-redux-boilerplate
+
+
+
 # React Reflux Boilerplate
 
 Another template that makes react and reflux web app developmet easier.
